@@ -38,6 +38,19 @@ class MealItem extends StatelessWidget {
                   child: Image.network(imageUrl,
                       height: 250, width: double.infinity, fit: BoxFit.cover),
                 ),
+                Positioned(
+                  bottom: 20,
+                  right: 0,
+                  child: Text(
+                    title,
+                    style: TextStyle(
+                      fontSize: 26,
+                      color: Colors.white,
+                    ),
+                    softWrap: true,
+                    overflow: TextOverflow.fade,
+                  ),
+                )
               ],
             )
           ],
